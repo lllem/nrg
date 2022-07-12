@@ -6,16 +6,25 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
-  },
-  {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/AboutView.vue'),
+    meta: {
+      title: 'Главная',
+    },
   },
   {
     path: '/components',
     name: 'components',
     component: () => import('../views/ComponentsView.vue'),
+    meta: {
+      title: 'Компоненты',
+    },
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('../views/AboutView.vue'),
+    meta: {
+      title: 'О проекте',
+    },
   },
 ];
 

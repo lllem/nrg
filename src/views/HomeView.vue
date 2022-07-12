@@ -8,7 +8,7 @@
     <pre
     v-highlightjs
     class="container py-5 overflow-hidden"
-    ><code class="json">{{ $router }}</code></pre>
+    ><code class="json">{{ $router.options.routes }}</code></pre>
 
   </div>
 </template>
