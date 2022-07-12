@@ -8,7 +8,7 @@
     </aside>
 
     <main class="nrg-layout__body bg-white shadow">
-      <header class="bg-white shadow">
+      <header class="nrg-layout__header bg-white shadow">
         <slot name="header"/>
       </header>
 
@@ -34,6 +34,22 @@
   width: 100%;
   min-height: 100vh;
 
+  .nrg-layout__sidebar {
+    display: inline-block;
+    width: 20rem; // TODO
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+
+  .nrg-layout__header {
+    position: sticky;
+    top: 0;
+  }
+
   .nrg-layout__body {
     width: 100%;
     display: flex;
@@ -51,9 +67,14 @@
   }
 
   .nrg-layout__sidebar {
+    display: inline-block;
     width: 20rem; // TODO
     max-width: 100%;
+    overflow-x: hidden;
     overflow-y: auto;
+    height: 100vh;
+    position: sticky;
+    top: 0;
   }
 }
 </style>
