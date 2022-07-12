@@ -5,7 +5,10 @@
       <h1>Home page</h1>
     </div>
 
-    <pre class="bg-dark text-white py-5 px-3 w-100 border">{{ $router }}</pre>
+    <pre
+    v-highlightjs
+    class="container py-5 overflow-hidden"
+    ><code class="json">{{ $router }}</code></pre>
 
   </div>
 </template>
