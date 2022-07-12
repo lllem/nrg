@@ -27,8 +27,6 @@
 </template>
 
 <script>
-/* eslint-disable */
-
 export default {
   name: 'text-input',
 
@@ -55,6 +53,9 @@ export default {
     onChange(e) {
       // ...
     },
+    emit(event) {
+      this.$emit(event.target.type);
+    }
   },
 
   created() {},
@@ -62,15 +63,17 @@ export default {
 </script>
 
 <style lang="scss">
-  $height: 2rem;
+  @import '@/nrg/tokens/tokens.scss';
+
+  $ctrl_height: 2rem;
 
   .nrg-input {
     position: relative;
-    height: $height;
+    height: $ctrl_height;
     border: 1px solid #ff000050;
 
     .nrg-input__intput {
-      height: 2rem;
+      height: $ctrl_height;
       background: transparent;
       border: none;
       outline: none;
@@ -81,7 +84,7 @@ export default {
       position: absolute;
       left: 0;
       top: 0;
-      line-height: $height;
+      line-height: $ctrl_height;
       pointer-events: none;
     }
 
@@ -96,10 +99,11 @@ export default {
     .nrg-input__indicator {
       height: 2px;
       display: inline-block;
-      width: 100%;
       background-color: grey; // 2DO
       position: absolute;
-      bottom: -1px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
     }
   }
 </style>
