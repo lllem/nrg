@@ -1,1 +1,36 @@
 @import 'bootstrap';
+@import '../../tokens/tokens.scss';
+
+// colors
+// -- background
+
+.nrg-bg-dark {
+  background-color: $bg_dark !important; // TODO del !important
+}
+
+.nrg-bg-light {
+  background-color: $bg_light;
+}
+
+// colors
+// -- text
+
+.t-black {
+  color: $t-black;
+}
+
+.t-white {
+  color: #fff;
+}
+
+// sizing
+
+.nrg-rounded {
+  border-radius: $corner-radius;
+}
+
+// __________
+
+body {
+  color: $t-black;
+}
