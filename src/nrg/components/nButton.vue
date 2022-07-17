@@ -1,11 +1,15 @@
 <template>
-  <button>button</button>
+  <button
+  class="nrg-btn"
+  >{{ text }}</button>
 </template>
 
 <script>
 export default {
   name: 'n-button',
+
   props: {
+    text: String,
     to: [String, Object],
     href: String,
     size: {
@@ -33,3 +37,19 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+  @import '@/nrg/tokens/tokens.scss';
+
+  $c_blue: #0077ff;
+
+  .nrg-btn {
+    border: none;
+    height: $ctrl_height;
+    border-radius: $ctrl_height/2;
+    padding: 0 1rem;
+    color: #fff;
+    background-color: $c_blue; // TODO
+    font-weight: 700;
+  }
+</style>
