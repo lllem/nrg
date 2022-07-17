@@ -41,8 +41,6 @@ export default {
 <style lang="scss">
   @import '@/nrg/tokens/tokens.scss';
 
-  $c_blue: #0077ff;
-
   .nrg-btn {
     border: none;
     height: $ctrl_height;

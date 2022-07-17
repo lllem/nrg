@@ -119,7 +119,7 @@ export default {
       pointer-events: none;
       transform-origin: top left;
       transition: 0.25s;
-      color: blue;
+      color: $c_blue;
       font-weight: 600;
     }
 
@@ -142,7 +142,7 @@ export default {
     .nrg-input__indicator {
       height: 2px;
       display: inline-block;
-      background-color: blue; // 2DO
+      background-color: $c_blue; // 2DO
       position: absolute;
       bottom: 0;
       left: 0;
