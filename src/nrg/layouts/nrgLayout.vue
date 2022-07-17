@@ -8,11 +8,17 @@
     </aside>
 
     <main class="nrg-layout__body bg-white shadow">
-      <header class="nrg-layout__header bg-white shadow">
+      <header
+      v-if="$slots.header"
+      class="nrg-layout__header bg-white shadow"
+      >
         <slot name="header"/>
       </header>
 
-      <section class="nrg-layout__banner px-3 py-5 nrg-bg-dark text-white text-center">
+      <section
+      v-if="$slots.banner"
+      class="nrg-layout__banner px-3 py-5 nrg-bg-dark text-white text-center"
+      >
         <slot name="banner"/>
       </section>
 

@@ -1,6 +1,10 @@
 import { createApp } from 'vue';
 import VueHighlightJS from 'vue3-highlightjs';
 
+import nParallaxHeader from '@/nrg/blocks/nParallaxHeader.vue';
+import nButton from '@/nrg/components/nButton.vue';
+import textInput from '@/nrg/components/textInput.vue';
+
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
@@ -13,4 +17,7 @@ createApp(App)
   .use(store)
   .use(router)
   .use(VueHighlightJS)
+  .component('nParallaxHeader', nParallaxHeader)
+  .component('nButton', nButton)
+  .component('textInput', textInput)
   .mount('#app');

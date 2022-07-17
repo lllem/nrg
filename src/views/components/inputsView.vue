@@ -1,9 +1,10 @@
 <template>
   <div class="inputs-view">
+    <nParallaxHeader>
+      <h1>Inputs</h1>
+    </nParallaxHeader>
 
     <div class="container my-5">
-      <h1>Inputs</h1>
-
       <div class="row">
 
         <div class="col-md-6 my-5">
@@ -80,12 +81,8 @@
 </template>
 
 <script>
-import textInput from '@/nrg/components/textInput.vue';
-
 export default {
-  components: {
-    textInput,
-  },
+  components: {},
 
   data() {
     return {

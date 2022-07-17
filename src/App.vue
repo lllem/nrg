@@ -28,10 +28,6 @@
         </nav>
       </template>
 
-      <template v-slot:banner>
-        <h1>Title</h1>
-      </template>
-
       <router-view/>
 
       <template v-slot:footer>
