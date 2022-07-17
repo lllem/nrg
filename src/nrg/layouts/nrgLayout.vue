@@ -1,5 +1,5 @@
 <template>
-  <div class="nrg-layout bg-light">
+  <div class="nrg-layout nrg-bg-light">
 
     <aside
     class="nrg-layout__sidebar"
@@ -12,7 +12,7 @@
         <slot name="header"/>
       </header>
 
-      <section class="nrg-layout__banner px-3 py-5 bg-dark text-white text-center">
+      <section class="nrg-layout__banner px-3 py-5 nrg-bg-dark text-white text-center">
         <slot name="banner"/>
       </section>
 

@@ -7,7 +7,7 @@ const routes = [
     name: 'home',
     component: HomeView,
     meta: {
-      title: 'Главная',
+      title: 'NRG Design System',
     },
   },
   {
@@ -17,6 +17,32 @@ const routes = [
     meta: {
       title: 'Компоненты',
     },
+    children: [
+      {
+        path: '',
+        name: 'components',
+        component: () => import('../views/components/indexPage.vue'),
+        meta: {
+          title: 'Компоненты',
+        },
+      },
+      {
+        path: '/components/input-text',
+        name: 'inputs-view',
+        component: () => import('../views/components/inputsView.vue'),
+        meta: {
+          title: 'Поле воода',
+        },
+      },
+      {
+        path: '/components/buttons',
+        name: 'buttons-view',
+        component: () => import('../views/components/buttonsView.vue'),
+        meta: {
+          title: 'Кнопка',
+        },
+      },
+    ],
   },
   {
     path: '/about',
