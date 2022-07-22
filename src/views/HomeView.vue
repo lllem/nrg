@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <nParallaxHeader>
-      <h1>Design System</h1>
+      <h1>NRG</h1>
+      <p class="lead">Design System</p>
     </nParallaxHeader>
 
     <div class="container my-5">
