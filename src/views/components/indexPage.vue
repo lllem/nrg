@@ -20,8 +20,8 @@
           </ul>
         </li>
         <li><router-link to="/components/buttons">Buttons</router-link></li>
+        <li><router-link to="/components/icons">Icons</router-link></li>
         <li>range</li>
-        <li>icons</li>
         <li>radiobutton</li>
         <li>checkbox</li>
         <li>toggler</li>

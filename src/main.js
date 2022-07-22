@@ -4,6 +4,7 @@ import VueHighlightJS from 'vue3-highlightjs';
 import nParallaxHeader from '@/nrg/blocks/nParallaxHeader.vue';
 import nButton from '@/nrg/components/nButton.vue';
 import textInput from '@/nrg/components/textInput.vue';
+import nIcon from '@/nrg/components/icons/nIcon.vue';
 
 import App from './App.vue';
 import './registerServiceWorker';
@@ -20,4 +21,5 @@ createApp(App)
   .component('nParallaxHeader', nParallaxHeader)
   .component('nButton', nButton)
   .component('textInput', textInput)
+  .component('nIcon', nIcon)
   .mount('#app');

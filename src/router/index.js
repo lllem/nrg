@@ -42,6 +42,14 @@ const routes = [
           title: 'Кнопка',
         },
       },
+      {
+        path: '/components/icons',
+        name: 'icons-view',
+        component: () => import('../views/components/iconsView.vue'),
+        meta: {
+          title: 'Иконки',
+        },
+      },
     ],
   },
   {
