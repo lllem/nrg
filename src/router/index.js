@@ -68,6 +68,14 @@ const routes = [
           title: 'Иконки',
         },
       },
+      {
+        path: '/components/code',
+        name: 'icons-view',
+        component: () => import('../views/components/codeView.vue'),
+        meta: {
+          title: 'Код',
+        },
+      },
     ],
   },
   {

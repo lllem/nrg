@@ -17,17 +17,18 @@
             <li>chips</li>
             <li>file</li>
             <li>WYSiWYG</li>
+            <li>range</li>
+            <li>radiobutton</li>
+            <li>checkbox</li>
+            <li>toggler</li>
+            <li>select</li>
           </ul>
         </li>
         <li><router-link to="/components/buttons">Buttons</router-link></li>
         <li><router-link to="/components/icons">Icons</router-link></li>
-        <li>range</li>
-        <li>radiobutton</li>
-        <li>checkbox</li>
-        <li>toggler</li>
+        <li><router-link to="/components/code">code</router-link></li>
         <li>video</li>
         <li>tooltip</li>
-        <li>select</li>
         <li>accordion</li>
         <li>loader</li>
         <li>tabs</li>
@@ -41,7 +42,6 @@
         <li>chat</li>
         <li>slider</li>
         <li>card</li>
-        <li>code</li>
         <li>map</li>
         <li>infographic</li>
         <li>3D</li>
