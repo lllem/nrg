@@ -6,11 +6,11 @@
       <h1>Icons</h1>
     </nParallaxHeader>
 
-    <div class="container my-5">
+    <div class="container mw-m my-5">
 
       <div class="row">
 
-        <div class="col-md-4 my-5 text-center">
+        <div class="col-md-6 my-5 text-center">
           <div class="icons-view__current-icon">
             <n-icon :icon="currentIcon" :fill="fill"/>
             <div class="icon-grid"></div>
@@ -21,7 +21,7 @@
           </p>
         </div>
 
-        <div class="col-md-4 my-5">
+        <div class="col-md-6 my-5">
           <pre
           v-highlightjs
           ><code class="html nrg-bg-dark nrg-rounded">{{ componentCode }}</code></pre>
@@ -59,7 +59,7 @@
     </div>
 
     <section class="border-top bg-light">
-      <div class="container">
+      <div class="container mw-m">
         <h2>Read</h2>
 
         <ul>

@@ -54,6 +54,7 @@
   .nrg-layout__header {
     position: sticky;
     top: 0;
+    z-index: 999;
   }
 
   .nrg-layout__body {
