@@ -16,6 +16,16 @@
           class="p-3 border w-100"
           >
             {{ route.meta.title || route.name }}
+
+            <ul v-if="route.children && (route.children.length > 1 || route.children[0].path)">
+              <template v-for="child in route.children" :key="child.path">
+                <li v-if="child.path">
+                  <router-link :to="child.path">
+                    {{ child.meta.title || child.name }}
+                  </router-link>
+                </li>
+              </template>
+            </ul>
           </router-link>
         </div>
       </template>
