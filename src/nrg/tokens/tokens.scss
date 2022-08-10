@@ -18,4 +18,19 @@ $t-black: #000b2e;
 $corner-radius: 1rem;
 $ctrl_height: 2rem;
 
+
 // breakpoints
+
+$xs: 576px;
+$s: 576px;
+$m: 768px;
+$l: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// max-width
+.mw-xs { max-width: $xs;}
+.mw-s { max-width: $s;}
+.mw-m { max-width: $m;}
+.mw-l { max-width: $l;}
+.mw-xl { max-width: $xl;}
