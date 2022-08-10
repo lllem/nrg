@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
+import RouterView from '../views/RouterView.vue';
 
 const routes = [
   {
@@ -11,9 +12,26 @@ const routes = [
     },
   },
   {
+    path: '/styles',
+    name: 'styles',
+    component: RouterView,
+    meta: {
+      title: 'Стили',
+    },
+    children: [
+      {
+        path: '',
+        component: () => import('../views/styles/indexPage.vue'),
+        meta: {
+          title: 'Компоненты',
+        },
+      },
+    ],
+  },
+  {
     path: '/components',
     name: 'components',
-    component: () => import('../views/ComponentsView.vue'),
+    component: RouterView,
     meta: {
       title: 'Компоненты',
     },
@@ -31,7 +49,7 @@ const routes = [
         name: 'inputs-view',
         component: () => import('../views/components/inputsView.vue'),
         meta: {
-          title: 'Поле воода',
+          title: 'Поле ввода',
         },
       },
       {
